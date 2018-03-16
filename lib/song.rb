@@ -68,8 +68,8 @@ end
 end
 
  def self.destroy_all
-   self.all.each(&:destroy)
- end 
+   
+ end
 
   def save
     self.class.all << self
