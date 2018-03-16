@@ -61,7 +61,7 @@ end
    song_and_artist = filename.split(" - ")
    name = song_and_artist[1].gsub(".mp3", "")
    artist_name = song_and_artist[0]
-   song = self.new
+   song = self.create
    song.name = name
    song.artist_name = artist_name
    song
