@@ -67,6 +67,10 @@ end
    song
 end
 
+ def self.destroy_all
+   self.all.each(&:destroy)
+ end 
+
   def save
     self.class.all << self
   end
